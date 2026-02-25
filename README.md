@@ -1,2 +1,2 @@
 # production-incident-playbooks
-SRE incident postmortems and case studies covering detection, containment, and permanent fixes across ERP and distributed systems.
+This documents my approach to SRE incident management in ERP environments, covering detection, containment, and permanent remediation.
