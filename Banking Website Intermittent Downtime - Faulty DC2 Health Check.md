@@ -53,8 +53,6 @@ The DC2 health check endpoint was serving stale cached data instead of a live sy
 
 **Vendor health check requirement** — raised a formal requirement with the DC2 vendor to fix their health check to return live status rather than cached data. This was documented in the incident resolution and tracked as a vendor action item with a deadline.
 
-**Load balancer alerting** — configured the load balancer to alert when traffic distribution between data centers deviates significantly from the expected ratio. A sudden shift to 100% on one DC now triggers an immediate investigation alert.
-
 **Vendor SLA and communication protocol** — established a formal escalation path with the vendor for P1 incidents, including a direct bridge call contact, expected response time, and a requirement that any maintenance activity affecting health check behavior be communicated to our team in advance.
 
 **Runbook** — documented the traffic rerouting steps in the load balancer so any on-call engineer can isolate a data center within minutes without waiting for a senior engineer. Runbook also includes the vendor P1 escalation contact and bridge call process.
@@ -70,5 +68,3 @@ The stepwise recovery — reroute, validate, engage vendor, fix, reintroduce gra
 When infrastructure is vendor-managed, having evidence ready before the bridge call is critical. Sharing Dynatrace screenshots and the stale health check response upfront meant the vendor could diagnose their side immediately rather than spending time reproducing the problem. Clear data shortens vendor resolution time significantly.
 
 ---
-
-*Based on a real incident. Some details are generalized.*
